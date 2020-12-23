@@ -1,0 +1,33 @@
+{% extends "template.html" %}
+
+{% block title %}News watch{% endblock %}
+
+{% block main %}
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <h1>News watch</h1>
+      <hr>
+
+      <form action="/" method="POST">
+
+        <div class="form-group">
+          <label>Choose a term to search for</label>
+          <input type="text" class="form-control" id="choose" name="choose" placeholder="choose a term">
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Find</button>
+        <div>
+        
+          <li>{{ result }}</li>
+          </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
